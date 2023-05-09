@@ -1,0 +1,350 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.formContainer::before{
+    content:' ';
+    background-image: url('./bg7.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    min-height: 100vh;
+}
+
+.alert{
+    padding: 7px;
+    color: green;
+    display: none;
+    justify-content: space-evenly;
+    /* background-color: red; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+
+.employeesContainer::before, .employeeCard::before{
+    content:' ';
+    /* background-image: url('./bg6.webp'); */
+    background-image: url('./back.jpeg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+    min-height: 100vh;
+    z-index: -1;
+    min-height: 100vh;
+}
+
+
+.navbar{
+
+    margin-bottom: 4vh;
+    padding: 10px 0px;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+}
+
+.navbar ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+.navbar ul li{
+    cursor: pointer;
+}
+
+.navListAni{
+    position: relative;
+}
+
+.navListAni::before{
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    color: rgb(247, 171, 29);
+    border-right: 2px solid rgb(151, 18, 18);
+    overflow: hidden;
+    animation: animate 6s linear infinite;
+}
+
+@keyframes animate{
+    0%,10%,100%
+    {
+        width:0;
+    }
+    70%,90%
+    {
+        width: 100%;
+    }
+}
+
+.formContainer{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: inset 3px -3px 5px 0px rgb(43, 73, 112);
+    margin: auto;
+    max-height: 80%;
+}
+
+#formHeading{
+    box-shadow: inset -1px 0 1px 0px rgb(238, 231, 231);
+    margin-bottom: 5px;
+    border-radius: 10px;
+    padding: 4px;
+    color: rgb(216, 241, 177);
+}
+
+#formBox{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.formFields{
+    border-bottom: 2px solid rgb(48, 102, 118);
+    padding: 7px;
+    border-radius: 5px;
+    margin-bottom: 1.2rem;
+}
+
+.err{
+    border: 1px solid red;
+    border-radius: 10px;
+    padding: 3px;
+}
+
+.success{
+    border-radius: 10px;
+    border: 1px solid green;
+    padding: 3px;
+}
+
+i{
+    font-size: 25px;
+    margin-right: 5px;
+}
+
+input{
+    background: none;
+    color: rgb(244, 245, 249);
+    border: none;
+    outline: none;
+    font-size: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bolder;
+}
+
+.registerBtn{
+    padding: 4px;
+    border: none;
+    margin-bottom: 20px;
+    background: none;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    border-radius: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 17px;
+}
+
+.registerBtn:hover{
+    background: none;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    border-radius: 6px;
+    box-shadow: inset 1px -1px 1px 0px rgb(238, 231, 231);
+}
+
+.employeesContainer{
+    color: white;
+    display: none;
+}
+
+.employeeCard{
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: inset 0.5px -0.5px white;
+    margin-bottom: 2vh;
+    width: 95vw;
+}
+
+.dataInfo{
+    /* background-color: rgb(244, 188, 188); */
+    background-color :blanchedalmond;
+    color: black;
+    font-weight: bold;
+    opacity: 0.7;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 10px;
+    padding: 7px;
+    box-shadow: inset 1px 1.5px rgb(238, 166, 166) ;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#sortBtn{
+    box-shadow: inset -1px -1px rgb(49, 147, 222);
+    margin-bottom: 10px;
+    background: none;
+    outline: none;
+    cursor: pointer;
+    color: rgb(51, 199, 177);
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.imageStyle{
+    margin-right: 10px;
+    height: 12.5em;
+    width: 12.5em;
+    border-radius: 50%;
+}
+
+.viewInfo{
+    color :aqua;
+    padding: 4px;
+    border-radius: 8px;
+    box-shadow: inset 1.5px -1.5px red;
+    margin: 10px;
+    cursor:pointer;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+.viewInfo:hover{
+    box-shadow: inset 2.5px -2.5px red;
+}
+
+.modal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalWindow{
+    width: 40vw;
+    background-color: rgb(241, 214, 208);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    box-shadow: inset 3px -5px 3px rgb(71, 14, 14);
+    border-radius: 10px;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align: center;
+    padding: 30px;
+    visibility:hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+
+.modalKey{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+}
+
+.openModal{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+}
+
+.modalWindow img{
+    width: 150px;
+    height: 150px;
+    margin-top: -100px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+#dismiss{
+    cursor: pointer;
+    background-color: rgb(236, 151, 151);
+    padding: 4px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+#dismiss:hover{
+    background-color: rgb(236, 111, 111);
+}
+
+.blur-bg {
+    display: none;
+    background: none;
+
+}
+
+@media only screen and (max-width : 800px){
+    .employeeCard{
+        flex-direction: column;
+    }
+    .imageStyle{
+        height: 9.5em;
+        width: 9.5em;
+        margin-bottom: 10px;
+    }
+    .modalWindow img{
+        width: 100px;
+        height: 100px;
+        margin-top: -80px;
+        border-radius: 50%;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+    .viewInfo{
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width : 710px){
+    
+    .modalWindow img{
+        width: 80px;
+        height: 80px;
+        margin-top: -75px;
+        border-radius: 50%;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+}

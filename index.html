@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/0dd92e976a.js" crossorigin="anonymous"></script>
+    <title>Employee-Management-System</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@1,600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li data-text="Register" class="listItemsNav navListAni" id="regBtn">Register</li>
+            <li data-text="Existing_Employees" class="listItemsNav" id="existingEmpBtn">Existing_Employees</li>
+        </ul>
+    </nav>
+
+    <div class="alert"><h2>Employee registered successfully</h2></div>
+
+
+    <div class="formContainer">
+        <form id="formBox" action="/">
+            <h1 id="formHeading">Register Here.!</h1>
+            <div class="formFields">
+                <i class="fa fa-user fa-solid" aria-hidden="true"></i>
+                <input type="text" id="empName" placeholder="Enter your Name" required>
+            </div>
+            <div class="formFields">
+                <i class="fa fa-address-card-o"></i>
+                <input type="text" id="empAddress" placeholder="Enter your Address" required>
+            </div>
+            <div class="formFields">
+                <i class="far fa-building"></i>
+                <input type="text" id="empDept" placeholder="Enter your Department" required>
+            </div>
+            <div class="formFields">
+                <i class="fa fa-solid fa-dollar"></i>
+                <input type="number" id="empSalary" placeholder="Enter your Salary" required>
+            </div>
+            <div class="formFields">
+                <i class="fa fa-solid fa-id-card"></i>
+                <input type="text" id="empId" placeholder="Job ID is auto-generated" disabled>
+            </div>
+            <button class="registerBtn">Click to Register</button>
+        </form>
+    </div>
+
+
+
+    <div class="employeesContainer">
+        <button id="sortBtn">Sort Employee details by name</button>
+        <div id="cardContainer">
+    </div>
+    </div>
+
+    <div class="modal">
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
